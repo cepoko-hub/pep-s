@@ -1,0 +1,261 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.logo-header {
+    max-width: 50px;
+    height: auto;
+}
+
+.navbar li {
+    display: inline;
+    font-size: 150%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00bfa5;
+}
+
+/*bannier*/
+
+.bannier {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url('/asset/img/photo-1556139943-4bdca53adf1e\ 1.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    text-align: center;
+}
+
+h1 {
+    font-size: 450%;
+    font-weight: bold;
+    text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.5);
+    color: black;
+    margin-bottom: 20px;
+    width: 900px;
+    overflow-wrap: break-word;
+}
+
+.gros-btn-contact {
+    display: inline-block;
+    background-color: #ff4081;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.gros-btn-contact:hover {
+    background-color: white;
+    color: #ff4081;
+    border: 2px solid #ff4081;
+}
+
+/*h2*/
+
+.titre {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.titre p {
+    margin-top: 5px;
+}
+
+/* article un*/
+
+.article-un {
+    margin-top: 50px;
+    margin-left: 7%;
+    margin-right: 4%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.img-article-un {
+    margin-right: 120px;
+}
+
+.article-un-text p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 120%;
+}
+
+.article-un-text li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-size: 118%;
+}
+
+/*responsive article 1*/
+
+@media (max-width: 1080px) {
+    .article-un {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .img-article-un {
+            width: 80%;
+            margin: 0 auto 20px auto;
+    }
+}
+
+/*ligne img*/
+
+.line {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+
+/*sous titre*/
+
+.sous-titre {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.sous-titre h2 {
+    font-size: 190%;
+    margin-bottom: 25px;
+}
+
+.sous-titre p {
+    font-size: 115%;
+}
+
+
+.btn-sous-titre {
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: white;
+    border: 2px solid #ff4081;
+    color: #ff4081;
+    margin-top: 35px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-sous-titre:hover {
+    background-color: #ff4081;
+    color: white;
+}
+
+/*methode card*/
+
+.section-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+}
+
+
+.card {
+    flex: 1 1 calc(50% - 40px); 
+    max-width: 340px;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; 
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    display: block;
+    margin: 0 auto 15px; 
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card .source {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/*card responsif*/
+
+@media (max-width: 1080px) {
+    .card {
+        flex: 1 1 100%; 
+    }
+}
+
+/*sous titre deux*/
+
+.sous-titre-deux {
+    margin-top: 40px;
+    text-align: center;
+}
+    
+.sous-titre h2 {
+    font-size: 190%;
+    margin-bottom: 25px;
+}
+    
+.sous-titre p {
+    font-size: 115%;
+}
+
+.sous-titre-deux-p {
+    margin-top: 40px;
+}
